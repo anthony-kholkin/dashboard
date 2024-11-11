@@ -41,6 +41,8 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 selected_columns = ['age', 'Global', 'lacunes_num', 'SVD Amended Score', 'lac_count']
 
 app.layout = dbc.Container([
+    html.H1("Анализ данных и кластеризация дасета для прогнозирования деменции", style={'text-align': 'center', 'margin-bottom': '20px'}),
+    html.H3("Работа студента гр. 4296, Холкина А.В.", style={'text-align': 'center', 'margin-bottom': '20px'}),
     dbc.Row([
         dbc.Col([
             dbc.Card([
@@ -209,4 +211,4 @@ def update_cluster_details(cluster):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, host='0.0.0.0', port=8000)
