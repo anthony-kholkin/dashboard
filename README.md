@@ -4,3 +4,10 @@ https://www.kaggle.com/datasets/fatemehmehrparvar/dementia
 
 Пример работы дашборда:
 ![img.png](src/img.png)
+
+## Запуск проекта
+
+```bash
+poetry install
+poetry run python main.py
+```
