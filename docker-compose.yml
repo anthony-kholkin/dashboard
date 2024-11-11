@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app/
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    command: python main.py
