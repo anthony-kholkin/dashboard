@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dashboard"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.0"
+ruff = "^0.1.7"
+pandas = "^2.2.3"
+dash = "^2.18.2"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+scikit-learn = "^1.5.2"
+imblearn = "^0.0"
+xgboost = "^2.1.2"
+dash-bootstrap-components = "^1.6.0"
+statsmodels = "^0.14.4"
+minisom = "^2.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
