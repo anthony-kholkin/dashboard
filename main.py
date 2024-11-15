@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 from scipy.stats import skew, kurtosis, sem, t
 
 # Загрузка данных
-data = pd.read_csv('data.csv').drop(columns=['ID'])
+data = pd.read_csv('src/data.csv').drop(columns=['ID'])
 
 # Предобработка данных
 data = data.dropna()
@@ -211,4 +211,4 @@ def update_cluster_details(cluster):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8000)
+    app.run_server(debug=True, port=8000)
